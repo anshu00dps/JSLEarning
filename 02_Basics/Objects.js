@@ -111,3 +111,20 @@ console.log(Object.entries(tinderUser));
 //to check whether key exists or not
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
+// --------------------------------------------------------------------------------------------------------------
+
+// object destructuring
+
+const course = {
+    coursename: "Js in Hindi",
+    price: "999",
+    courseInst: "Ashwani"
+}
+
+// console.log(course.courseInst)
+const {courseInst} = course
+console.log(courseInst)
+//or
+const {courseInst : Instructor} = course
+console.log(Instructor);
+
