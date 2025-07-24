@@ -107,5 +107,5 @@ Animal.prototype.Species = function(){
 let x = new Animal("Dog", "Brown", "Bark", 32)
 let y = new Animal("Bird" , "Yellow", "Chirp")
 
-console.log(x.Species(), x.Color(), x.Sound(),)
+console.log(x.Species(), x.Color(), x.Sound())
 console.log(y.Species(), y.Sound(), y.Color())
