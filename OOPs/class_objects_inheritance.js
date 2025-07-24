@@ -37,7 +37,6 @@ let myArray = [1,2,3]
 
 // class and object
 class Vehicle{
-    
     constructor(make, model, year){
         this.make = make
         this.model = model
@@ -48,4 +47,17 @@ class Vehicle{
         return `${this.make} car named ${this.model} got started in ${this.year}`
     }
 }
+
+let Supra = new Vehicle("Toyota", "Supra", "1996 mark 2")
+console.log(Supra.start())
+
+//inheritance is done by using extends keyword
+// can't override constructor or methods as it can be done using typescript 
+class Car extends Vehicle{
+    drive(){
+        return `${this.make} car is ${this.model}`
+    }
+}
+let x = new Car("Toyota", "Supra", "2000")
+console.log(x.drive(), " ", x.start());
 
