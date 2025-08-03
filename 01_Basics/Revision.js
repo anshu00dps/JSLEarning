@@ -1,26 +1,14 @@
-let str = "1"
-//convert to binary, number 
-let binStr = Boolean(str)
-let numStr = Number(str)
-let num = 1
-
-// == : compare two variables
-// === : compare two variables irrespective of their datatype
-// if(str === num){
-//     console.log(false)
-// }else{
-//     console.log(true)
-// }
-
-// let sym1 = Symbol("desc")
-// let sym2 = Symbol("desc")
-
-// sym1 = Symbol("desc1")
-
-// object declaration (Non-primitive)
-myObj = {
-    name: "Ashwani",
-    age: 22
+// constructor function
+function genericCar(make, model, engine){
+    this.make = make
+    this.model = model
+    this.engine = engine
 }
-console.log(myObj.name)
+     
+genericCar.prototype.Engine = function(){
+    return `${this.make} makes car ${this.model} and it has v${this.engine} engine`
+}
 
+let i20 = new genericCar("Hyundai", "i20", "3 inline")
+console.log(i20) 
+console.log(i20.Engine())
