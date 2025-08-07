@@ -54,7 +54,6 @@ class species extends Bird{
     fly(bird_name){
         return `${bird_name} can't fly` 
     }
-    
 }
 
 let tweeter = new Bird
