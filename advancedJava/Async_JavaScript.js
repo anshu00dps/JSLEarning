@@ -11,3 +11,8 @@ function greet(){
 setTimeout(() => {
     greet();
 }, 2000 ) //2000 means 2 seconds
+
+false = ()=>{
+    console.log(module)
+}
+console.log(false)
