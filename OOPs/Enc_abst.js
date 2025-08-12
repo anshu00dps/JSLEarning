@@ -23,6 +23,7 @@ class coffeeMachine{
         this.#CT = cT
     }
 
+    // abstracting these two methods below i.e startMaking() and etaCoffee()
     startMaking(){
         return `${this.#CT} is under making`
     }
